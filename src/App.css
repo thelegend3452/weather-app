@@ -1,9 +1,9 @@
 body {
   align-items: center;
-  padding: 1rem;
+  padding: 0;
   display: flex;
   min-height: 90vh;
-  background: linear-gradient(to bottom right, #535bf2, #c5c6f1);
+  background: linear-gradient(to top left, #535bf2, #c5c6f1);
   justify-content: center;
 }
 
@@ -14,27 +14,12 @@ body {
   padding: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-
-input {
-  margin-top: 5px;
-  margin-left: 25%;
-  align-items: center;
-  border-radius: 1.5rem;
-  border:none;
-  padding: 1rem;
-  background: linear-gradient(to right, #f9f9f9, #f9f9f9);
-  place-items: center;
-}
-input[type=text] {
-  color: black;
-}
-
 .header {
   justify-content: center;
   align-items: center;
   text-align: center;
   font-weight: bold;
+  margin-top: -33px;
 }
 
 .city {
@@ -51,20 +36,27 @@ input[type=text] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
   font-weight: bold;
 }
 .wind-speed-header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.35) ;
 }
 .wind-speed-text {
-  margin-left: 20%;
+  margin-left: 17%;
 }
 .humidity-header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.35);
 }
 .humidity-text {
   margin-left: 25%;
+}
+
+.today {
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  color: #213547;
 }
 
 .forecast {
@@ -84,3 +76,67 @@ input[type=text] {
   font-size: 1.5rem;
   text-align: center;
 }
+
+
+img {
+  width: 45px;
+  height: 45px;
+}
+
+.imageweather {
+  width: 70px;
+  height: 70px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 45px;
+  width: 45px;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: width 0.8s ease;
+  padding: 0;
+}
+
+.search-container:hover {
+  width: 100%;
+}
+
+.search-container.active {
+  width: 100%;
+}
+
+.searchbar {
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  color: #000;
+  outline: none;
+  width: 100%;
+  padding: 0 55px 0 20px;
+  opacity: 0;
+  transition: opacity 0.4s 0.1s ease;
+}
+
+.search-container.active .searchbar {
+  opacity: 1;
+}
+
+.magnifying-glass {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.magnifying-glass img {
+  width: 100%;
+  height: 100%;
+}
+
