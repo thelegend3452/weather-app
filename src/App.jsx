@@ -84,7 +84,7 @@ function App() {
                     onBlur={handleblur}
                 />
                 <div className="magnifying-glass">
-                    <img className="glass" src="/src/assets/images/earth.png" alt="glass-icon" />
+                    <img className="glass" src="./assets/images/earth.png" alt="glass-icon" />
                 </div>
             </div>
 
