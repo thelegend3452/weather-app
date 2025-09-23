@@ -9,6 +9,7 @@ import rainimg from './assets/images/rain.png'
 import snowimg from './assets/images/snow.png'
 import scattered from './assets/images/scattered.png'
 import lightrain from './assets/images/lightrain.png'
+import searchicon from './assets/images/earth.png'
 
 function App() {
     const [city, setCity] = useState('Oslo')
@@ -84,7 +85,7 @@ function App() {
                     onBlur={handleblur}
                 />
                 <div className="magnifying-glass">
-                    <img className="glass" src="./assets/images/earth.png" alt="glass-icon" />
+                    <img src={searchicon} alt="search icon" />
                 </div>
             </div>
 
