@@ -1,4 +1,5 @@
 import './App.css'
+import './components/styling/mobile.css'
 import { useState} from "react"
 import axios from "axios"
 
@@ -18,7 +19,7 @@ function App() {
     const [isActive, setIsActive] = useState(false)
     const [loading, setLoading] = useState(true)
 
-    const API_KEY = "74804ec2b7a39fd1507c40f8312f7441"
+    const API_KEY = import.meta.env.VITE_REACT_APP_API_KEY
 
 
         const weatherapi = async (cityName) => {
