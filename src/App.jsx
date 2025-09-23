@@ -11,6 +11,7 @@ import snowimg from './assets/images/snow.png'
 import scattered from './assets/images/scattered.png'
 import lightrain from './assets/images/lightrain.png'
 import searchicon from './assets/images/earth.png'
+import fewclouds from './assets/images/fewclouds.png'
 
 function App() {
     const [city, setCity] = useState('Oslo')
@@ -63,6 +64,7 @@ function App() {
         'Snow': snowimg,
         'scattered clouds' : scattered,
         'light rain': lightrain,
+        'few clouds': fewclouds,
     }
 
     const changeforecast = {

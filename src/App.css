@@ -10,7 +10,7 @@ body {
 .wrapper {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 1.5rem;
-  min-width: 400px;
+  width: 1000px;
   padding: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
