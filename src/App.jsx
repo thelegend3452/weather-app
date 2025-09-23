@@ -3,12 +3,12 @@ import { useState} from "react"
 import axios from "axios"
 
 
-import cloudyimg from '/src/assets/images/brokenclouds.png'
-import clearimg from '/src/assets/images/sun.png'
-import rainimg from '/src/assets/images/rain.png'
-import snowimg from '/src/assets/images/snow.png'
-import scattered from '/src/assets/images/scattered.png'
-import lightrain from '/src/assets/images/lightrain.png'
+import cloudyimg from './assets/images/brokenclouds.png'
+import clearimg from './assets/images/sun.png'
+import rainimg from './assets/images/rain.png'
+import snowimg from './assets/images/snow.png'
+import scattered from './assets/images/scattered.png'
+import lightrain from './assets/images/lightrain.png'
 
 function App() {
     const [city, setCity] = useState('Oslo')
